@@ -13,15 +13,53 @@ M.treesitter = {
 
 M.mason = {
   ensure_installed = {
-    -- lua stuff
+    "codespell",
+
     "lua-language-server",
     "stylua",
+    "selene",
 
-    -- web dev stuff
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "deno",
+    "clangd",
+    "clang-format",
+
+    "gopls",
+    "gofumpt",
+    "revive",
+
+    "pyright",
+    "mypy",
+    "blue",
+
+    "shfmt",
+    "shellcheck",
+  },
+}
+
+M.server = {
+  "sumneko_lua",
+  "clangd",
+  "pyright",
+  "gopls",
+}
+
+M.nvim_cmp = {
+  -- 增加补全源
+  sources = {
+    { name = "emoji" },
+    { name = "calc" },
+    { name = "vim-dadbod-completion" },
+    { name = "cmp_tabnine" },
+
+    -- 原补全
+    { name = "luasnip" },
+    { name = "nvim_lsp" },
+    { name = "buffer" },
+    { name = "nvim_lua" },
+    { name = "path" },
+  },
+  window = {
+    completion = {},
+    documentation = {},
   },
 }
 

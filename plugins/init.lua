@@ -2,7 +2,9 @@ local overrides = require "custom.plugins.overrides"
 
 return {
 
-  -- ["goolord/alpha-nvim"] = { disable = false } -- enables dashboard
+  ["goolord/alpha-nvim"] = {
+    disable = false,
+  }, -- enables dashboard
 
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {
@@ -33,14 +35,6 @@ return {
     end,
   },
 
-  -- code formatting, linting etc
-  ["jose-elias-alvarez/null-ls.nvim"] = {
-    after = "nvim-lspconfig",
-    config = function()
-      require "custom.plugins.null-ls"
-    end,
-  },
-
-  -- remove plugin
-  -- ["hrsh7th/cmp-path"] = false,
+  -- c++ 头文件跳转，和函数生成
+  ["chxuan/cpp-mode"] = {},
 }
