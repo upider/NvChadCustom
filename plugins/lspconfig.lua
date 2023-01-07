@@ -7,8 +7,9 @@ local lspconfig = require "lspconfig"
 local servers = {
     "jdtls",
     "clangd",
-    "pyright",
+    "pylsp",
     "gopls",
+    "sumneko_lua",
 }
 
 for _, lsp in ipairs(servers) do

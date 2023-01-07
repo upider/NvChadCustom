@@ -39,12 +39,14 @@ return {
         override_options = {
             ensure_installed = {
                 "codespell",
+                "codelldb",
                 "json-lsp",
                 "dockerfile-language-server",
                 "yaml-language-server",
-                "yaml-fmt",
+                "yamlfmt",
+                "yamllint",
 
-                "lua-language-server",
+                "lua-language-server", -- sumneko_lua
                 "stylua",
                 "selene",
 
@@ -55,8 +57,7 @@ return {
                 "gofumpt",
                 "revive",
 
-                "pyright",
-                "mypy",
+                "python-lsp-server",
                 "blue",
                 "isort",
 
