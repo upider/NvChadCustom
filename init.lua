@@ -33,6 +33,8 @@ vim.opt.fileencoding = "utf-8"
 -- tab=4个空格
 vim.opt.tabstop=4
 vim.opt.shiftwidth=4
+vim.opt.undofile=false
 -- 配置剪切板
 -- vim.opt.clipboard = "unnamedplus"
-vim.opt_global.cmake_export_compile_commands=1
+vim.g.mkdp_open_ip = "127.0.0.1"
+vim.g.mkdp_echo_preview_url = 1
